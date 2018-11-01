@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../CSS/materialize.css"  media="screen,projection"/>
+  <title>ReWrite - Lienzo</title>
+</head>
+<body >
+<div class="" name="header">
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="../../index.html" class="brand-logo"><img alt="imagen" class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.jpg"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
+        <li><a class=" black-text text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
+        <li><a class=" black-text text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
+        <li><a class=" black-text text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
+        <li><a class=" black-text text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
+        <li><a class=" black-text text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
+        <li><a class=" black-text text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
+        <li><a class=" black-text text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
+        <li><a class=" black-text text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+<div class="container">
+
+  <div class="row">
+
+    <div class="section grey col s3 m3 l3 xl3"><!--Sidebar para consejos y revisiones-->
+      <h2 class="white-text">Lienzo</h2>
+      <div class="row">
+        <br>
+        <h6 class="white-text">Aquí tenemos unos muy buenos consejos para ti. </h6><br>
+        <ul class="collapsible">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">assignment_turned_in</i>Ortografía y gramática</div>
+            <div class="collapsible-body">
+              <span class="white-text">consejo</span><!--aquí va el consejo-->
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">photo_filter</i>Claridad</div>
+            <div class="collapsible-body">
+              <span class="white-text">consejo</span><!--aquí va el consejo-->
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">description</i>Estructura</div>
+            <div class="collapsible-body"><!--aquí va el consejo-->
+              <ul>
+                <li class="white-text">Introducción</li>
+                <li class="white-text">Desarrollo</li>
+                <li class="white-text">Conclusión</li>
+                <li class="white-text">Referencias</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <h6 class="white-text">Otras herramientas</h6><br>
+
+      </div>
+    </div>
+    <div class="section white col s8 m8 l8 xl8"><!--contenido principal donde se escribe-->
+      <div>
+        <form name="form1" id="form1">
+          <div class="oculto lienzo" contenteditable>
+            Este un texto de prueba. :)
+          </div>
+          <input type="submit" class="btn waves-effect waves-light" name="guardar" id="guardar" value="Guardar"><br><br>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="../../JS/materialize.min.js"></script>
+<script type="text/javascript" src="../../JS/init.js"></script>
+</body>
+</html>
