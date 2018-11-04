@@ -5,13 +5,13 @@
         <link type="text/css" rel="stylesheet" href="../../CSS/materialize.css"  media="screen,projection"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>ReWrite - Lirica</title>
+        <title>ReWrite - Lírica</title>
     </head>
     <body >
         <div class="" name="header">
             <nav>
                 <div class="nav-wrapper white">
-                    <a href="../../index.html" class="brand-logo"><img alt="imagen" class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.jpg"></a>
+                    <a href="../../index.html" class="brand-logo"><img alt="imagen" class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.png"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
@@ -35,7 +35,7 @@
 
             <div class="row"> 
                 <div class="section grey col s3 m3 l3 xl3"><!--Sidebar para consejos y revisiones-->
-                    <h2 class="white-text">Ensayo</h2>
+                    <h2 class="white-text">Lírica</h2>
                     <div class="row"> 
                         <br>
                         <h6 class="white-text">Aquí tenemos unos muy buenos consejos para ti. </h6><br>
@@ -59,35 +59,38 @@
                                 </div>
                             </li>
                         </ul>
+                        <h6 class="white-text">Palabras:</h6><br><!--Aquí va el conteo de número de palabras-->
                     </div>
                     <div class="row">
                         <h6 class="white-text">Herramientas</h6><br>
 
-                        <button id="nuevaEstrofa" class="btn-floating btn-large waves-effect waves-light blue">
+                        <button id="nuevaEstrofa" class="btn-floating btn-large waves-effect waves-light blue" ONCLICK="mostrarEstrofa();">
                             <i class="material-icons">add</i>
                         </button><label class="white-text" for="nuevaEstrofa">&nbsp;&nbsp;Estrofa</label>
-                        <div class="input-field col s12 m12 l12 xl12"><!--aprece sólo cuando se da clic en nueva estrofa-->
-                            <select>
+                        <div class="input-field col s12 m12 l12 xl12" hidden id="tipoEstro" name="tipoEstro" ><!--aparece sólo cuando se da clic en nueva estrofa-->
+                            <select id="tipoEstrofa" name="tipoEstrofa" >
                                 <option class="white-text" value="" disabled selected>Elige uno..</option>
                                 <option value="1">Alejandrino</option><!--Traer opciones de la base-->
                                 <option value="2">Quintilla</option>
                             </select>
-                            <label></label>
                         </div>
                     </div>
                 </div>
 
                 <div class="section white col s8 m8 l8 xl8"><!--contenido principal donde se escribe-->
-                    <div>
-                        <p>Este es un ejemplo de un texto.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                            deserunt mollit anim id est laborum.</p>
+                  <form action="" method="">
+                    <input type="submit" class="btn waves-effect waves-light right" name="guardar" id="guardar" value="Guardar"><br><br>
+                    <div contenteditable="true" class="oculto">
+                      <p>Este es un ejemplo de un texto.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
                     </div>
+                  </form>
                 </div>
 
             </div>

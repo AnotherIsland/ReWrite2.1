@@ -11,7 +11,7 @@
 <div class="" name="header">
   <nav>
     <div class="nav-wrapper white">
-      <a href="../../index.html" class="brand-logo"><img alt="imagen" class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.jpg"></a>
+      <a href="../../index.html" class="brand-logo"><img alt="imagen" class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
@@ -36,7 +36,7 @@
   <div class="row">
 
     <div class="section grey col s3 m3 l3 xl3"><!--Sidebar para consejos y revisiones-->
-      <h2 class="white-text">Ensayo</h2>
+      <h2 class="white-text">Resumen</h2>
       <div class="row">
         <br>
         <h6 class="white-text">Aquí tenemos unos muy buenos consejos para ti. </h6><br>
@@ -54,17 +54,17 @@
             </div>
           </li>
           <li>
-            <div class="collapsible-header"><i class="material-icons">description</i>Estructura</div>
-            <div class="collapsible-body"><!--aquí va el consejo-->
-              <ul>
-                <li class="white-text">Introducción</li>
-                <li class="white-text">Desarrollo</li>
-                <li class="white-text">Conclusión</li>
-                <li class="white-text">Referencias</li>
+            <div class="collapsible-header"><i class="material-icons">description</i>Palabras clave</div>
+            <div class="collapsible-body" name="pClave" id="pClave"><!--aquí va el consejo-->
+              <ul id="listaClaves">
+                <li class="white-text">
+                  <input type="text" onkeypress="validap();" placeholder="Añade una palabra" onblur="agregaPalabra(this);">
+                </li>
               </ul>
             </div>
           </li>
         </ul>
+        <h6 class="white-text">Palabras:</h6><br><!--Aquí va el conteo de número de palabras-->
       </div>
       <div class="row">
         <h6 class="white-text">Otras herramientas</h6><br>
@@ -81,24 +81,23 @@
             </select>
           </form>
         </div>
+        <div class="col s12 m12 l12 xl12" >
+
+        </div>
       </div>
     </div>
     <div class="section lienzo white col s8 m8 l8 xl8"><!--contenido principal donde se escribe-->
-      <div>
         <form name="form1" id="form1">
-          <input type="text" class="input-field oculto " placeholder="Título" >
-          <input type="text" class="input-field oculto " placeholder="Introducción" >
-          <input type="text" class="input-field oculto " placeholder="Desarrollo" >
-          <input type="text" class="input-field oculto " placeholder="Conclusión" >
+          <input type="submit" class="btn waves-effect waves-light right" name="guardar" id="guardar" value="Guardar"><br><br>
+          <input type="text" class="input-field oculto " placeholder="Título" name="titulo" id="titulo" >
+          <label for="contenido"><h6>Contenido</h6></label>
+          <input class="input-field oculto" id="contenido" name="contenido">
+          </input>
           <label for="referencias"><h6>Referencias</h6></label>
           <div type="text" id="referencias" name="referencias" class="input-field oculto">
             <!--Aquí se generan las referencias-->
           </div>
-          <div class="oculto" contenteditable>
-          </div>
-          <input type="submit" class="btn waves-effect waves-light" name="guardar" id="guardar" value="Guardar"><br><br>
         </form>
-      </div>
     </div>
   </div>
 </div>

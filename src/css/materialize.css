@@ -3480,9 +3480,8 @@ table span.badge {
 }
 
 .section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding: 2rem;
+
+  padding: 1.5rem !important;
   margin-top: 4rem;
   margin-right: 1rem;
   border-radius: 15px;

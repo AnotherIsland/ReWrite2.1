@@ -211,4 +211,37 @@ function validaInicio(formulario){
     }
   }
 }
+function agregaPalabra(pal){
+  let palabra = null;
+  let icon = null;
+  let span = null;
+  if(pal.value !== ''){
+    palabra = document.createElement('li');
+    icon = document.createElement('i');
+    span = document.createElement('span');
+
+    palabra.setAttribute('class','white-text');
+    icon.setAttribute('class', 'tiny material-icons');
+    span.setAttribute('class','white-text');
+
+    icon.innerHTML = 'check';
+    span.innerHTML = '&nbsp;'+ pal.value;
+
+    palabra.appendChild(icon);
+    palabra.appendChild(span);
+    document.getElementById('listaClaves').appendChild(palabra);
+    pal.value = '';
+  }else{
+    return false;
+  }
+}
+
+function mostrarEstrofa() {
+  let btn = document.getElementById('tipoEstro');
+  if(btn.hidden == true){
+    document.getElementById('tipoEstro').hidden = false;
+  }else {
+    document.getElementById('tipoEstro').hidden = true;
+  }
+}
 
