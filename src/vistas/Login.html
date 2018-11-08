@@ -37,7 +37,7 @@
           <form action="" method="" onsubmit="validaInicio(this);">
             <div class="row">
               <div class="input-field col s12">
-                <input id="usuario" type="text" name="usuario" class="validate" onkeypress="valCorreo();">
+                <input id="username" type="text" name="username" class="validate" onkeypress="valCorreo();">
                 <label class="" for="usuario">Correo o nombre de usuario</label>
               </div>
             </div>
@@ -49,7 +49,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <input type="submit"  class="btn waves-effect waves-light" value="ENVIAR" name="aceptar">
+                <input type="submit"  class="btn waves-effect waves-light" value="ENVIAR" onclick="addUser()" name="aceptar">
               </div>
             </div>
           </form>

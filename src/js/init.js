@@ -25,6 +25,14 @@ function mostrarEstrofa() {
     document.getElementById('tipoEstro').hidden = true;
   }
 }
+function mostrarCompartir() {
+  let btn = document.getElementById('share');
+  if(btn.hidden == true){
+    document.getElementById('share').hidden = false;
+  }else {
+    document.getElementById('share').hidden = true;
+  }
+}
 function newRef(ref){
   let refer = document.createElement('div');//Crea el div donde irán los inputs para añadir una referencia
   //aun no sé como generar un id distinto para cada nueva referencia :C

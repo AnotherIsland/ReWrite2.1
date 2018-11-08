@@ -8,28 +8,27 @@
   <title>ReWrite - Ajustes</title>
 </head>
 <body>
-<div class="" name="jeder">
+<div class="" name="header">
   <nav>
-    <div class="nav-wrapper white">
-      <a href="../../index.html" class="brand-logo"><img class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.png"></a>
+    <div class="nav-wrapper ">
+      <a href="../../index.html" class="brand-logo"><img class="responsive-img center-align" style="padding: 10px" src="../../IMG/logoT.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
-        <li><a class=" black-text text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
-        <li><a class=" black-text text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
-        <li><a class=" black-text text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
-        <li><a class=" black-text text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
+        <li><a class=" text-accent-4" href="../Login.html">Cerrar Sesión</a></li>
+        <li><a class=" text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
+        <li><a class=" text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
+        <li><a class=" text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
+        <li><a class=" text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
       </ul>
       <ul class="sidenav" id="mobile-demo">
-        <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
-        <li><a class=" black-text text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
-        <li><a class=" black-text text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
-        <li><a class=" black-text text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
-        <li><a class=" black-text text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
+        <li><a class=" text-accent-4" href="../Login.html">Cerrar Sesión</a></li>
+        <li><a class=" text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
+        <li><a class=" text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
+        <li><a class=" text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
+        <li><a class=" text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
       </ul>
     </div>
   </nav>
-
 </div>
 <div class="container">
   <div class="section white col s10 m10 l10 xl10 offset-s1 offset-l1 offset-m1 offset-xl1 z-depth-3" >
@@ -40,32 +39,50 @@
     <span>Da clic para cambiar alguno de tus datos</span>
     <ul class="collapsible popout">
       <li>
-        <div class="collapsible-header"><i class="material-icons">account_circle</i>Nombre de usuario: </div>
-        <div class="collapsible-body">
-          <form>
-            <input type="text" class="" name="usuario" placeholder="Nuevo nombre de usuario">
-            <input type="submit" class="btn waves-effect waves-light" name="confirmar" value="Cambiar">
-          </form>
+        <div class="collapsible-header"><i class="material-icons">account_circle</i>Usuario: <!--Aquí va el nombre actual del usuario --></div>
+        <div class="collapsible-body row">
+            <form action="" method="" ><!--Form para cambiar nombre de usuario e imagen-->
+            <div class="col s4 m4 l5 xl5">
+              <img src="../../img/user.png" class="responsive-img">
+              <input type="button" class="waves-effect waves-lights" name="cambiaImagen" value="Escoger imagen...">
+            </div>
+            <div class=" col s8 m8 l7 xl7">
+              <label for="usuario">Cambiar nombre de usuario:</label><input type="text" class="" name="usuario" id="usuario" placeholder="Nuevo nombre">
+              <input type="submit" class="btn waves-effect waves-light" name="confirmar" value="Guardar">
+            </div>
 
+          </form>
         </div>
       </li>
       <li>
         <div class="collapsible-header"><i class="material-icons">email</i>Correo:</div>
         <div class="collapsible-body">
-          <form>
-            <input type="text" class="" name="correo" placeholder="Nuevo correo">
-            <input type="submit" class="btn waves-effect waves-light" name="confirmar" value="Cambiar">
+          <form><!--Form para cambiar email-->
+            <div class="input-field">
+              <label for="correo">Ingresa el nuevo correo:</label>
+              <input type="text" class="" name="correo" id="correo">
+            </div>
+            <input type="submit" class="btn waves-effect waves-light" name="guardar" value="Guardar">
           </form>
         </div>
       </li>
       <li>
         <div class="collapsible-header"><i class="material-icons">lock</i>Contraseña</div>
         <div class="collapsible-body">
-          <form>
-            <input type="text" class="" name="contraNueva" placeholder="Actual contraseña"><br>
-            <input type="text" class="" name="confirmacionContra" placeholder="Contraseña nueva"><br>
-            <input type="text" class="" name="contraVieja" placeholder="Confirma la nueva contraseña"><br>
-            <input type="submit" class="btn waves-effect waves-light" name="confirmar" value="Cambiar">
+          <form><!--Form para cambiar contraseña-->
+            <div class="input-field">
+              <label for="contraVieja"> Ingresa tu actual contraseña:</label>
+              <input type="password" class="validate" name="contraVieja" id="contraVieja"><br>
+            </div>
+            <div class="input-field">
+              <label for="contraNueva"> Ingresa tu nueva contraseña:</label>
+              <input type="password" class="validate" name="contraNueva" id="contraNueva"><br>
+            </div>
+            <div class="input-field">
+              <label for="confirmacionContra"> Confirma tu nueva contraseña:</label>
+              <input type="password" class="validate" name="confirmacionContra" id="confirmacionContra"> <br>
+            </div>
+            <input type="submit" class="btn waves-effect waves-light" name="confirmar" value="Guardar">
           </form>
         </div>
       </li>

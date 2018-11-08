@@ -5,31 +5,35 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="../../CSS/materialize.css"  media="screen,projection"/>
+
+
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <!--<script type="text/javascript" src="../../js/main.js"></script>-->
+
   <title>ReWrite - Resumen</title>
 </head>
 <body >
 <div class="" name="header">
   <nav>
-    <div class="nav-wrapper white">
-      <a href="../../index.html" class="brand-logo"><img alt="imagen" class="responsive-img center-align" style="padding: 10px" src="../../IMG/logo.png"></a>
+    <div class="nav-wrapper">
+      <a href="../../index.html" class="brand-logo"><img class="responsive-img center-align" style="padding: 10px" src="../../IMG/logoT.png"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
-        <li><a class=" black-text text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
-        <li><a class=" black-text text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
-        <li><a class=" black-text text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
-        <li><a class=" black-text text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
+        <li><a class=" text-accent-4" href="../Login.html">Cerrar Sesión</a></li>
+        <li><a class=" text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
+        <li><a class=" text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
+        <li><a class=" text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
+        <li><a class=" text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
       </ul>
       <ul class="sidenav" id="mobile-demo">
-        <li><a class=" black-text text-accent-4" href="../Inicio.html">Cerrar Sesión</a></li>
-        <li><a class=" black-text text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
-        <li><a class=" black-text text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
-        <li><a class=" black-text text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
-        <li><a class=" black-text text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
+        <li><a class=" text-accent-4" href="../Login.html">Cerrar Sesión</a></li>
+        <li><a class=" text-accent-4" href="../MISOBRAS/MisObras.html">Mis Obras</a></li>
+        <li><a class=" text-accent-4" href="../CREAR/Crear.html">Crear</a></li>
+        <li><a class=" text-accent-4" href="../AJUSTES/Ajustes.html">Ajustes</a></li>
+        <li><a class=" text-accent-4" href="../EVOLUCION/Evolucion.html">Evolución</a></li>
       </ul>
     </div>
   </nav>
-
 </div>
 <div class="container">
 
@@ -38,7 +42,7 @@
     <div class="section grey col s3 m3 l3 xl3"><!--Sidebar para consejos y revisiones-->
       <h2 class="white-text">Resumen</h2>
       <div class="row">
-        <br>
+        <br><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">forum</i>&nbsp;Ver el chat</a>
         <h6 class="white-text">Aquí tenemos unos muy buenos consejos para ti. </h6><br>
         <ul class="collapsible">
           <li>
@@ -71,7 +75,7 @@
 
         <button id="nuevaRef" class="btn-floating btn-large waves-effect waves-light blue" onclick="mostrarTipoRef();">
           <i class="material-icons">add</i>
-        </button><label class="white-text" for="nuevaRef"> Nueva referencia</label>
+        </button><label class="white-text" for="nuevaRef">&nbsp;&nbsp;Nueva referencia</label>
         <div class="input-field col s12 m12 l12 xl12" id="tipoRef" name="tipoRef" hidden ><!--aparece sólo cuando se da clic en nueva referencia-->
           <form>
             <select id="tipoReferencia" name="tipoReferencia" onchange="newRef(this);">
@@ -81,11 +85,18 @@
             </select>
           </form>
         </div>
-        <div class="col s12 m12 l12 xl12" >
-
+        <br><br>
+        <!--Compartir obra y despliega vínculo-->
+        <button id="compartir" class="btn-floating btn-large waves-effect waves-light blue" onclick="mostrarCompartir();">
+          <i class="material-icons">person_add</i>
+        </button><label class="white-text" for="compartir">&nbsp;&nbsp;Compartir Obra</label>
+        <div class="" style="overflow: hidden;" id="share" name="share" hidden ><!--aparece sólo cuando se da clic en compartir-->
+          <a class="truncate" href="https://material.io/tools/color/?fbclid=IwAR0W6Dplr3J4E2x6bGo_lqiLd-kJJJijRuk5t9iEXBO4FblTc51Y9mNjaoY#!/?view.left=1&view.right=0&primary.color=212121&secondary.color=64B5F6">https://material.io/tools/color/?fbclid=IwAR0W6Dplr3J4E2x6bGo_lqiLd-kJJJijRuk5t9iEXBO4FblTc51Y9mNjaoY#!/?view.left=1&view.right=0&primary.color=212121&secondary.color=64B5F6
+          </a>
         </div>
       </div>
     </div>
+
     <div class="section lienzo white col s8 m8 l8 xl8"><!--contenido principal donde se escribe-->
         <form name="form1" id="form1">
           <input type="submit" class="btn waves-effect waves-light right" name="guardar" id="guardar" value="Guardar"><br><br>
@@ -99,20 +110,46 @@
           </div>
         </form>
     </div>
-  </div>
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+    <ul id="slide-out" class="sidenav">
+      <div class="chat section">
+        <div class="row">
+          <div id="messages"></div>
+        </div>
+        <div class="row">
+          <div id="users" >
+            <h7>Usuarios conectados: </h7>
+            <ul id="user-list" class="list-group"></ul>
+          </div>
+        </div>
+
+        <div class="responsive-table">
+          <table class="table" align="centered">
+            <tr>
+              <form class="col l12 m12 s12 xl12" name="messageToSend">
+                </th>
+                <th>
+                  <div class="input-field">
+                    <label for="text">Mensaje:</label>
+                    <textarea class="materialize-textarea" id="text" placeholder="Escribe aquí..."></textarea>
+                  </div>
+                  <div class="alert alert-danger" id="alert2"><strong>ERROR! </strong>Ingresa un mensaje válido.</div>
+                </th>
+                <th><br><br>
+                  <div class="">
+                    <button class="btn-floating btn-large waves-effect waves-light blue" onclick="addMessage()">
+                      <i class="material-icons medium">send</i>
+                    </button>
+                  </div>
+                </th>
+              </form>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </ul>
   </div>
+
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="../../JS/materialize.min.js"></script>

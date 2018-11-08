@@ -4302,10 +4302,10 @@ table span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  line-height: 56px;
+  background-color: rgba(0,0,0,0.7);
   width: 100%;
   height: 56px;
-  line-height: 56px;
 }
 
 nav.nav-extended {
@@ -4323,8 +4323,7 @@ nav.nav-extended .nav-content {
 }
 
 nav a {
-  color: #000000;
-  
+  color: #fff;
 }
 
 nav i,
@@ -4449,7 +4448,7 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 nav ul.left {
